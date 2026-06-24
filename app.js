@@ -140,7 +140,7 @@ async function sendTelegramNotification(message, imagePath = null) {
             // 7. 返回
             await page.getByRole('link', { name: '戻る' }).click();
 
-            const successMsg = `🚀 *Xserver 续期通知* \n\n✅ 用户 ${user.username} 成功续期`;
+            const successMsg = `🇯🇵 Xserver 续期通知\n\n✅ 用户 ${user.username} 成功续期`;
             console.log(successMsg);
             const successPath = `success_${user.username}.png`;
             await page.screenshot({ path: successPath });
